@@ -9,3 +9,5 @@
 # If the selection matches a supported operation, execute the operation.
 # If the selection does not match a support operation, display an error message.
 # When the operation is complete, redisplay the menu.
+
+echo "Hello, welcome to the most advanced calculator program based on Shell you will ever see!"
