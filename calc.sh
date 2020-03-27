@@ -21,13 +21,10 @@ echo "Exit"
 
 echo "Please make a selection:"
 read selection
-#Display the selection
-
-
+echo "The operation selected was: $selection"
 # If the selection matches a supported operation, execute the operation.
 case $selection in 
-  "Add")
-   echo "The operation selected was: $selection"
+  "Add")   
    echo "Please provide the first number"
 read first_number
    echo "You supplied: $first_number"
@@ -38,7 +35,6 @@ read second_number
 expr $first_number + $second_number
    ;;
   "Subtract")
-   echo "The operation selected was: $selection"
    echo "Please provide the first number"
 read first_number
    echo "You supplied: $first_number"
@@ -49,7 +45,6 @@ read second_number
 expr $first_number - $second_number
    ;;
    "Multiply")
-echo "The operation selected was: $selection"
    echo "Please provide the first number"
 read first_number
    echo "You supplied: $first_number"
