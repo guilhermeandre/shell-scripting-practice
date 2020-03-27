@@ -24,8 +24,18 @@ case $selection in
   "Add")
    echo "The operation selected was: $selection"
    ;;
+  "Subtract")
+   echo "The operation selected was: $selection"
+   ;;
+  "Exit")
+  echo "Exiting the calculator..."
+  ;;
+# If the selection does not match a support operation, display an error message.
+  *)
+  echo "Neither available operations were selected"
+  ;;
 esac
 
-# If the selection does not match a support operation, display an error message.
+
 # When the operation is complete, redisplay the menu.
 
