@@ -9,13 +9,13 @@ while true; do
 # Then, display a menu that outlines the possible operations:
 echo "The possible operations are:"
   # Add
-echo "Add"
+echo "1 - Add"
   # Subtract
-echo "Substract"
+echo "2 - Substract"
   # Multiply 
-echo "Multiply"
+echo "3 - Multiply"
   # Exit
-echo "Exit"
+echo "4 - Exit"
 
 # Then, capture the user selection.
 
@@ -24,7 +24,7 @@ read selection
 echo "The operation selected was: $selection"
 # If the selection matches a supported operation, execute the operation.
 case $selection in 
-  "Add")   
+  "Add" | "add" | 1)   
    echo "Please provide the first number"
 read first_number
    echo "You supplied: $first_number"
@@ -34,7 +34,7 @@ read second_number
    echo "The result is:"
 expr $first_number + $second_number
    ;;
-  "Subtract")
+  "Subtract" | "subtract" | 2)
    echo "Please provide the first number"
 read first_number
    echo "You supplied: $first_number"
@@ -44,7 +44,7 @@ read second_number
    echo "The result is:"
 expr $first_number - $second_number
    ;;
-   "Multiply")
+   "Multiply" | "multiply" | 3)
    echo "Please provide the first number"
 read first_number
    echo "You supplied: $first_number"
@@ -54,7 +54,7 @@ read second_number
    echo "The result is:"
 expr $first_number \* $second_number
    ;;
-  "Exit" | "exit")
+  "Exit" | "exit" | 4)
   echo "Exiting the calculator..."
   exit 0
   ;;
