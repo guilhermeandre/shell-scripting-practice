@@ -17,9 +17,15 @@ echo "Exit"
 echo "Please make a selection:"
 read selection
 #Display the selection
-echo "The operations selected was: $selection"
+
 
 # If the selection matches a supported operation, execute the operation.
+case $selection in 
+  "Add")
+   echo "The operation selected was: $selection"
+   ;;
+esac
+
 # If the selection does not match a support operation, display an error message.
 # When the operation is complete, redisplay the menu.
 
