@@ -23,6 +23,14 @@ read selection
 case $selection in 
   "Add")
    echo "The operation selected was: $selection"
+   echo "Please provide the first number"
+read first_number
+   echo "You supplied: $first_number"
+   echo "Please provide the second number"
+read second_number
+   echo "You supplied $second_number"
+   echo "The result is:"
+expr $first_number + $second_number
    ;;
   "Subtract")
    echo "The operation selected was: $selection"
