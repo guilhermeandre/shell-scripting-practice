@@ -12,6 +12,8 @@ echo "The possible operations are:"
 echo "Add"
   # Subtract
 echo "Substract"
+  # Multiply 
+echo "Multiply"
   # Exit
 echo "Exit"
 
@@ -46,9 +48,20 @@ read second_number
    echo "The result is:"
 expr $first_number - $second_number
    ;;
+   "Multiply")
+echo "The operation selected was: $selection"
+   echo "Please provide the first number"
+read first_number
+   echo "You supplied: $first_number"
+   echo "Please provide the second number"
+read second_number
+   echo "You supplied $second_number"
+   echo "The result is:"
+expr $first_number \* $second_number
+   ;;
   "Exit" | "exit")
   echo "Exiting the calculator..."
-  exit
+  exit 0
   ;;
 # If the selection does not match a support operation, display an error message.
   *)
